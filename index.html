@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <title>Join</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="container__imagem">
+            <h1 class="container__titulo">Prepare for glory, dear jomsviking</h1>
+            <img src="./Image/Eivor.jpg" alt="Viking">
+            <h2 class="slogan">Shields and axes await you once you take your oath here.</h2>
+        </section>
+        <section class="container">
+            <label for="user" class="container__input">Jomsviking name</label>
+            <input type="text" id="user" name="username" maxlength="35">
+            <label for="clan" class="container__input">Clan</label>
+            <input type="text" id="clan" name="clan__member" maxlength="15">
+            <label for="age" class="container__input">Age</label>
+            <input type="number" id="age" name="old" maxlength="3">
+            <label for="weapon" class="container__input">Weapon</label>
+            <input type="text" id="iron" name="armed" maxlength="20">
+            <label for="position" class="container__input">Position</label>
+            <input type="text" id="position" name="willing" maxlength="20">
+            <a href="#" class="botton">To swear</a>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $('#age').mask('000');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+:root{
+    --cor-body: #333333;
+    --fonte-principal: 'Philosopher', sans-serif;;
+    --cor-principal: #000000;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria: #a30000;
+}
+
+body{
+    background-color: var(--cor-body);
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundaria);
+}
+
+.container__titulo{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.container__imagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.slogan{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.container__input{
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.botton{
+    background-color: var(--cor-secundaria);
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: var(--cor-principal);
+}
+
+.botton:hover{
+    transition: 3s;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+
+
+@media screen and (min-width: 1024px){
+    .main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 25%;
+        column-gap: 30px;
+    }
+    .slogan{
+        flex-wrap: wrap;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1920px){
+    .main{
+        display: flex;
+        justify-content: space-around;
+        align-items: left;
+        padding: 15px;
+        margin-top: 8%;
+    }
+    .container__titulo{
+        font-size: 2.2rem;
+    }
+    .slogan{
+        font-size: 30px;
+    }
+    .container{
+        float: right;
+        margin-left: 25%;
+    }
+    .container__input{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .botton{
+        background-color: var(--cor-secundaria);
+        cursor: pointer;
+        padding: 15px 25px;
+        margin-top: 15px;
+        border-radius: 10px;
+        color: var(--cor-principal);
+    }
+    .botton:hover{
+        transition: 3s;
+        background-color: var(--cor-terciaria);
+        color: var(--cor-secundaria);
+    }
+
+}
